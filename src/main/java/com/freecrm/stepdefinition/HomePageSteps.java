@@ -125,6 +125,36 @@ public class HomePageSteps extends BaseProject{
 		homePage.Department();
 	}
 
+	@Then("^I click on status and select active$")
+	public void i_click_on_status_and_select_active() {
+		homePage.Status();
+	}
+	
+	@Then("^I add email$")
+	public void i_add_email() {
+		homePage.Emails();
+	}
+	
+	@Then("^I add notes$")
+	public void i_add_notes() {
+		homePage.Notes();
+	}
+	
+	@Then("^I click on combined form$")
+	public void i_click_on_combined_form() {
+		homePage.clickOnCombinedForm();
+	}
+	
+	@Then("^I enter company information$")
+	public void i_enter_company_information() {
+		homePage.companyInformation();
+	}
+	
+	@Then("^I enter contact information$")
+	public void i_enter_contact_information() {
+		homePage.contactInformation();
+	}
+	
 	@Then("^I click on save button$")
 	public void i_click_on_save_button() {
 		homePage.clickSave();

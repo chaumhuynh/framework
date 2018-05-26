@@ -20,5 +20,12 @@ Scenario: validate login fuctionality
     And I enter nickname
     And I enter position
     And I enter department
+    And I click on status and select active
+    And I add email
+    And I add notes
     And I click on save button
-    
+		And I click on combined form
+		And I wait three seconds
+		And I enter company information
+		And I enter contact information
+		And I click on save button   
